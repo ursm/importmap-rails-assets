@@ -26,4 +26,7 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
+        env:
+          BUNDLE_GEMFILE: ${{ github.workspace }}/Gemfile
+          BUNDLE_FROZEN: 'false'
       - run: bundle exec rake test
