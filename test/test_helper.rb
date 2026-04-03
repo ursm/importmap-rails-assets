@@ -1,0 +1,6 @@
+require 'bundler/setup'
+require 'minitest/autorun'
+require 'webmock/minitest'
+require 'rails'
+require 'importmap-rails-css'
+require 'tmpdir'
